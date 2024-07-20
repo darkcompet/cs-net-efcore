@@ -1,14 +1,17 @@
 # Entity Framework Core for dotnet
 
+- Package: Tool.Compet.EntityFrameworkCore
+- Submodule: git submodule add https://github.com/darkcompet/cs-net-efcore.git
 
-- About
+## Dependencies
 
-	```bash
-	# Add as submodule
-	# Tool.Compet.EntityFrameworkCore
-	git submodule add https://github.com/darkcompet/csharp-net-efcore.git
+```bash
+	# Libs
+	dotnet add package Microsoft.EntityFrameworkCore
+	dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+	dotnet add package Microsoft.EntityFrameworkCore.Tools
+	dotnet add package MySql.EntityFrameworkCore
 
-	# Dependencies
 	# Tool.Compet.Core
-	https://github.com/darkcompet/csharp-core
-	```
+	git submodule add https://github.com/darkcompet/cs
+```
