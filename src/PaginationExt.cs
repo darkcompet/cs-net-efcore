@@ -74,23 +74,31 @@ public static class PaginationExt {
 }
 
 public class PagedResult<T>(T[] items, Pager pager) where T : class {
+	/// <summary>
 	/// Items in the page.
 	/// Note: can use `IEnumerable<T>` for more abstract that can cover both of array and list.
+	/// </summary>
 	public readonly T[] items = items;
 
 	public readonly Pager pager = pager;
 }
 
 public class Pager(int page, int count, int total) {
+	/// <summary>
 	/// Page position (1-based index)
+	/// </summary>
 	[JsonPropertyName("page")]
 	public int page { get; set; } = page;
 
-	/// Page count
+	/// <summary>
+	/// Number of page
+	/// </summary>
 	[JsonPropertyName("count")]
 	public int count { get; set; } = count;
 
+	/// <summary>
 	/// Total item count
+	/// </summary>
 	[JsonPropertyName("total")]
 	public int total { get; set; } = total;
 }
