@@ -3,6 +3,7 @@
 - Package: Tool.Compet.EntityFrameworkCore
 - Submodule: git submodule add https://github.com/darkcompet/cs-net-efcore.git
 
+
 ## Dependencies
 
 ```bash
@@ -14,4 +15,15 @@
 
 	# Tool.Compet.Core
 	git submodule add https://github.com/darkcompet/cs
+```
+
+
+## Installation
+
+
+- Just include it into project by add as git-submodule.
+	
+```bash
+	# Tool.Compet.Core
+	git submodule add https://github.com/darkcompet/cs-net-efcore.git
 ```
